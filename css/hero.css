@@ -1,22 +1,21 @@
 .hero {
     width: 100%;
-    height: calc(100vh - 60px);
-    /* Considera la altura de la navbar */
+    min-height: calc(100vh - 60px);
     background-color: #8ba4bd;
     color: #27292f;
     display: flex;
     justify-content: center;
     align-items: center;
     padding: 0;
-    overflow: hidden;
-    margin-top: 60px;
-    /* Evita superposición con la navbar */
+    position: relative;
+    z-index: 1;
 }
 
-.hero-content {
+.hero-container {
     text-align: center;
     max-width: 800px;
     margin: 0 auto;
+    padding: 20px;
 }
 
 .hero-image {
@@ -39,4 +38,51 @@
 .hero-description {
     font-size: 18px;
     line-height: 1.6;
+}
+
+/* Media Queries */
+@media (max-width: 768px) {
+    .hero-title {
+        font-size: 28px;
+    }
+
+    .hero-subtitle {
+        font-size: 20px;
+    }
+
+    .hero-description {
+        font-size: 16px;
+    }
+
+    .hero-image {
+        width: 120px;
+        height: 120px;
+    }
+
+    .hero-container {
+        padding: 10px;
+    }
+}
+
+@media (max-width: 480px) {
+    .hero-title {
+        font-size: 24px;
+    }
+
+    .hero-subtitle {
+        font-size: 18px;
+    }
+
+    .hero-description {
+        font-size: 14px;
+    }
+
+    .hero-image {
+        width: 100px;
+        height: 100px;
+    }
+
+    .hero-container {
+        padding: 5px;
+    }
 }
