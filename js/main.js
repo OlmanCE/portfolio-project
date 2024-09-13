@@ -138,7 +138,11 @@ document.addEventListener('DOMContentLoaded', () => {
             'bash script.sh',
             'python script.py',
             'node app.js',
-
+            // Comandos de sistema
+            'df -h',
+            'du -sh *',
+            'free -m',
+            'uname -a',
             // comandos útiles
             'alias ll="ls -la"',
             'history',
