@@ -113,7 +113,7 @@ html {
     transition: all 0.3s ease;
     padding-top: 20px;
     z-index: 2;
-    /* Mantén las opciones del menú al frente */
+    /*las opciones del menú al frente */
   }
 
   .navbar-item {
@@ -121,7 +121,7 @@ html {
     text-align: center;
     margin: 20px 0;
     z-index: 3;
-    /* Asegura que los elementos de menú estén por encima */
+    /* mantiene que los elementos de menú estén por encima */
   }
 
   .navbar-menu.active {
@@ -131,10 +131,10 @@ html {
   .navbar-toggle {
     display: block;
   }
-
+/* 
   .navbar-toggle.active i {
     transform: rotate(90deg);
-  }
+  } */
 
   /* Terminal lines will be behind the menu items */
   .terminal-line {
