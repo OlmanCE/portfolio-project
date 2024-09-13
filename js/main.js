@@ -118,11 +118,33 @@ document.addEventListener('DOMContentLoaded', () => {
     // Function para iniciar el efecto de tipeo
     function startTypeWriterEffect() {
         const commands = [
+            // Navegación y gestión de archivos
+            'mkdir portfolio',
             'cd portfolio',
             'ls -l',
             'cat about.txt',
             'vim projects.md',
-            'git push origin master'
+            'git push origin master',
+
+            // Control de versiones con Git
+            'git status',
+            'git add .',
+            'git commit -m "mejoras navbar"',
+            'git pull origin master',
+            'git branch feature-xyz',
+            'git checkout feature-xyz',
+            'git merge feature-xyz',
+            // Automatización y scripting
+            'bash script.sh',
+            'python script.py',
+            'node app.js',
+
+            // comandos útiles
+            'alias ll="ls -la"',
+            'history',
+            'echo "Hola Mundo"',
+            'chmod +x script.sh'
+
         ];
         let commandIndex = 0;
         let charIndex = 0;
@@ -170,9 +192,9 @@ document.addEventListener('DOMContentLoaded', () => {
 
 function initContactForm() {
     const contactForm = document.getElementById('contact-form');
-    
+
     if (contactForm) {
-        contactForm.addEventListener('submit', function(e) {
+        contactForm.addEventListener('submit', function (e) {
             e.preventDefault();
             //posible implementación de fetch para enviar el formulario a un servidor :)           
             alert('Gracias por tu mensaje. Te contactare pronto!');
